@@ -1,0 +1,97 @@
+# =============================================================
+# .gitignore for LangGraph / LangChain / Streamlit / RAG projects
+# =============================================================
+
+# ---------- 🔐 SECRETS (MOST IMPORTANT - never push these!) ----------
+# API keys: GROQ_API_KEY, TAVILY_API_KEY, PINECONE, QDRANT, MISTRAL, etc.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# Streamlit secrets (used on Streamlit Cloud)
+.streamlit/secrets.toml
+
+# ---------- 🐍 Virtual environments ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- 🐍 Python cache / build files ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- 🧠 LangGraph / LangChain / LangSmith ----------
+.langgraph_api/
+.langgraph/
+langgraph.db
+checkpoints.sqlite
+checkpoints.db
+*.sqlite
+*.sqlite3
+.langchain.db
+
+# ---------- 📚 RAG: vector stores & data ----------
+chroma_db/
+chroma/
+.chroma/
+qdrant_storage/
+local_qdrant/
+faiss_index/
+*.faiss
+*.pkl
+vectorstore/
+vector_store/
+
+# Uploaded / private documents (PDFs, audio, video) - can be big or private
+uploads/
+temp_uploads/
+data/private/
+*.mp3
+*.wav
+*.mp4
+
+# Downloaded models & embeddings cache
+.cache/
+models/
+huggingface/
+*.gguf
+*.bin
+*.safetensors
+
+# ---------- 📓 Jupyter ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- 🪵 Logs & temp ----------
+*.log
+logs/
+tmp/
+temp/
+
+# ---------- 💻 Editors / IDE ----------
+.vscode/
+.idea/
+*.code-workspace
+
+# ---------- 🪟 OS files (Windows / macOS) ----------
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ---------- 🐳 Docker (optional) ----------
+docker-compose.override.yml
