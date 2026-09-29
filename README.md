@@ -85,8 +85,8 @@ Get keys from [Groq Console](https://console.groq.com) and [Tavily](https://tavi
 **Streamlit UI (recommended)**
 
 ```bash
-streamlit run linkedin_ui.py            # AI reviewer version
-streamlit run humanintheloop_ui.py      # Human-in-the-loop version
+streamlit run iterativetools_ui.py            # AI reviewer version
+streamlit run humanintheloop_UI.py      # Human-in-the-loop version
 ```
 
 **Console versions**
@@ -130,7 +130,7 @@ Suggestions and pull requests are welcome. Please open an issue first to discuss
 
 ## 👤 Author
 
-**Mohammed Aasim Qureshi**
+**Mohd Aazib Qureshi**
 Aspiring AI / Full Stack AI Engineer
 
 ⭐ If this project helped you, consider giving it a star!
