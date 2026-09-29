@@ -182,7 +182,10 @@ label, .stMarkdown, .stRadio { color:#e2e8f0 !important; }
 [data-testid="stChatInput"] { background: rgba(255,255,255,.14) !important; backdrop-filter: blur(12px);
   border: 1px solid rgba(255,255,255,.25); border-radius: 16px; transition: box-shadow .25s; }
 [data-testid="stChatInput"]:focus-within { box-shadow: 0 0 22px rgba(96,165,250,.6); }
-[data-testid="stChatInput"] textarea { color: #fff !important; }
+[data-testid="stChatInput"] textarea {
+    color: #111827 !important;
+    caret-color: #111827 !important;
+}
 </style>
 """
 
